@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FG Gaona | Multilingual CV – English, Español, Русский, 日本語</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #eef2f3;
+            color: #1a2a3a;
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        .header h2 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 2px solid #ffd700;
+            color: #ffd700;
+            padding: 8px 20px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .lang-btn:hover, .lang-btn.active {
+            background: #ffd700;
+            color: #1a2a3a;
+        }
+
+        /* Content */
+        .content {
+            padding: 40px;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e6ed;
+            padding-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #2c5364;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title span {
+            font-size: 1.8rem;
+        }
+
+        /* Grids */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 700px) {
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+            .content {
+                padding: 25px;
+            }
+            .header h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .exp-item {
+            margin-bottom: 20px;
+        }
+
+        .exp-item h3 {
+            color: #1a2a3a;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .exp-item .date {
+            color: #ffd700;
+            font-weight: bold;
+            font-size: 0.8rem;
+            margin-bottom: 5px;
+        }
+
+        .exp-item .company {
+            color: #2c5364;
+            font-weight: 500;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        .exp-item p {
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background: #e0e6ed;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #2c5364;
+        }
+
+        .contact-info {
+            background: #f0f4f8;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: #2c5364;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            color: #ffd700;
+        }
+
+        footer {
+            background: #1a2a3a;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: none;
+            height: 1px;
+            background: #e0e6ed;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Header -->
+    <div class="header">
+        <h1>Francisco Javier Rodriguez Gaona</h1>
+        <h2>🌍 Cross-Border Consultant | Language Specialist | Business Manager</h2>
+        <div class="lang-switch">
+            <button class="lang-btn active" data-lang="es">🇲🇽 Español</button>
+            <button class="lang-btn" data-lang="en">🇬🇧 English</button>
+            <button class="lang-btn" data-lang="ru">🇷🇺 Русский</button>
+            <button class="lang-btn" data-lang="ja">🇯🇵 日本語</button>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- ==================== SPANISH ==================== -->
+        <div class="lang-content active" data-lang-content="es">
+            <div class="section">
+                <div class="section-title"><span>📋</span> Perfil Profesional</div>
+                <p>Profesional mexicano con <strong>más de 10 años de experiencia internacional</strong> en México, Maldivas y Rusia. Especialista en enseñanza de idiomas, consultoría de negocios transfronteriza y gestión operativa. Actualmente cursando una Maestría en Rusia.</p>
+                <div class="skills">
+                    <span class="skill-tag">🌎 3 idiomas + japonés básico</span>
+                    <span class="skill-tag">🎓 TESOL/TEFL & TEYL</span>
+                    <span class="skill-tag">📈 +15% crecimiento en ingresos</span>
+                </div>
+            </div>
+
+            <div class="two-columns">
+                <div>
+                    <div class="section">
+                        <div class="section-title"><span>💼</span> Experiencia Laboral</div>
+                        <div class="exp-item">
+                            <h3>Profesor de Inglés y Español</h3>
+                            <div class="date">Oct 2025 – Presente</div>
+                            <div class="company">Top Class Language Center, Krasnodar</div>
+                            <p>Enseñanza a adultos niveles A2-B2. Programas personalizados para entrevistas, viajes, negocios. Retroalimentación 4.9-5.0.</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>Profesor de Inglés (Infantil)</h3>
+                            <div class="date">Sep 2024 – Sep 2025</div>
+                            <div class="company">Solnechny Kindergarten, Krasnodar</div>
+                            <p>Diseño de programa integral para preescolares. Clases interactivas con juegos y canciones.</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>Gerente de Centro de Buceo</h3>
+                            <div class="date">Jun 2024 – Ago 2025</div>
+                            <div class="company">Dive Center "Kashalot", Rusia</div>
+                            <p>Coordinación de equipo, estrategias de ventas, aumento de ingresos en 15% mediante alianzas con hoteles.</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>Instructor PADI / Guía de Resort</h3>
+                            <div class="date">Abr 2022 – Nov 2023</div>
+                            <div class="company">Paradise Island (Villa Nautica), Maldivas</div>
+                            <p>Enseñanza de cursos PADI, guía en arrecifes, presentaciones sobre tiburones ballena y mantarrayas.</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>Instructor PADI / Ventas</h3>
+                            <div class="date">Oct 2012 – Mar 2015</div>
+                            <div class="company">Aquaworld, Cancún, México</div>
+                            <p>Ventas en hoteles 5 estrellas como Ritz Carlton. Buceos en la marina más grande de Latinoamérica.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="section">
+                        <div class="section-title"><span>🎓</span> Educación y Certificaciones</div>
+                        <div class="exp-item">
+                            <h3>Maestría</h3>
+                            <div class="company">Universidad en Rusia (en curso)</div>
+                        </div>
+                        <div class="exp-item">
+                            <h3>TESOL/TEFL (120 horas)</h3>
+                            <div class="company">Acreditado – 2021</div>
+                        </div>
+                        <div class="exp-item">
+                            <h3>TEYL (60 horas)</h3>
+                            <div class="company">Teaching English to Young Learners – 2024</div>
+                        </div>
+                        <div class="exp-item">
+                            <h3>PADI Open Water Instructor</h3>
+                            <div class="company">Certificado internacional de buceo</div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span>🗣️</span> Idiomas</div>
+                        <div class="exp-item"><h3>Español</h3><p>Nativo (México)</p></div>
+                        <div class="exp-item"><h3>Inglés</h3><p>Fluido (C1-C2)</p></div>
+                        <div class="exp-item"><h3>Ruso</h3><p>Avanzado (B2-C1)</p></div>
+                        <div class="exp-item"><h3>Japonés</h3><p>Básico (N5-N4)</p></div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span>🏆</span> Logros Clave</div>
+                        <p>✅ Aumento de ingresos en centro de buceo: <strong>+15%</strong><br>
+                        ✅ Estudiantes alcanzan fluidez conversacional en <strong>3-4 meses</strong><br>
+                        ✅ Preparación exitosa para IELTS (6.5-7.5), DELE B2, JLPT N5-N4<br>
+                        ✅ Experiencia en resorts 5 estrellas y escuelas internacionales</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                📧 <a href="mailto:rodriguezgaona@mail.ru">rodriguezgaona@mail.ru</a> &nbsp;|&nbsp;
+                📞 <a href="tel:+79280399668">+7 (928) 039-9668</a> &nbsp;|&nbsp;
+                📍 Krasnodar, Rusia (trabajo remoto disponible)
+            </div>
+        </div>
+
+        <!-- ==================== ENGLISH ==================== -->
+        <div class="lang-content" data-lang-content="en">
+            <div class="section">
+                <div class="section-title"><span>📋</span> Professional Profile</div>
+                <p>Mexican professional with <strong>10+ years of international experience</strong> across Mexico, the Maldives, and Russia. Specialist in language teaching, cross-border business consulting, and operations management. Currently pursuing a Master's degree in Russia.</p>
+                <div class="skills">
+                    <span class="skill-tag">🌎 3 languages + basic Japanese</span>
+                    <span class="skill-tag">🎓 TESOL/TEFL & TEYL certified</span>
+                    <span class="skill-tag">📈 +15% revenue growth track record</span>
+                </div>
+            </div>
+
+            <div class="two-columns">
+                <div>
+                    <div class="section">
+                        <div class="section-title"><span>💼</span> Work Experience</div>
+                        <div class="exp-item">
+                            <h3>English & Spanish Teacher</h3>
+                            <div class="date">Oct 2025 – Present</div>
+                            <div class="company">Top Class Language Center, Krasnodar</div>
+                            <p>Teaching adults A2-B2. Personalized programs for interviews, travel, business. 4.9-5.0 feedback.</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>English Teacher (Young Learners)</h3>
+                            <div class="date">Sep 2024 – Sep 2025</div>
+                            <div class="company">Solnechny Kindergarten, Krasnodar</div>
+                            <p>Designed comprehensive English program for preschoolers. Interactive games and songs.</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>Dive Center Manager</h3>
+                            <div class="date">Jun 2024 – Aug 2025</div>
+                            <div class="company">Kashalot Dive Center, Russia</div>
+                            <p>Team coordination, sales strategies, increased revenue by 15% through hotel partnerships.</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>PADI Instructor / Resort Guide</h3>
+                            <div class="date">Apr 2022 – Nov 2023</div>
+                            <div class="company">Paradise Island (Villa Nautica), Maldives</div>
+                            <p>Taught PADI courses, reef guiding, presentations on whale sharks and manta rays.</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>PADI Instructor / Sales</h3>
+                            <div class="date">Oct 2012 – Mar 2015</div>
+                            <div class="company">Aquaworld, Cancún, Mexico</div>
+                            <p>Sales in 5-star hotels including Ritz Carlton. Dives in Latin America's largest marina.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="section">
+                        <div class="section-title"><span>🎓</span> Education & Certifications</div>
+                        <div class="exp-item">
+                            <h3>Master's Degree</h3>
+                            <div class="company">University in Russia (in progress)</div>
+                        </div>
+                        <div class="exp-item">
+                            <h3>TESOL/TEFL (120 hours)</h3>
+                            <div class="company">Accredited – 2021</div>
+                        </div>
+                        <div class="exp-item">
+                            <h3>TEYL (60 hours)</h3>
+                            <div class="company">Teaching English to Young Learners – 2024</div>
+                        </div>
+                        <div class="exp-item">
+                            <h3>PADI Open Water Instructor</h3>
+                            <div class="company">International diving certification</div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span>🗣️</span> Languages</div>
+                        <div class="exp-item"><h3>Spanish</h3><p>Native (Mexico)</p></div>
+                        <div class="exp-item"><h3>English</h3><p>Fluent (C1-C2)</p></div>
+                        <div class="exp-item"><h3>Russian</h3><p>Advanced (B2-C1)</p></div>
+                        <div class="exp-item"><h3>Japanese</h3><p>Basic (N5-N4)</p></div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span>🏆</span> Key Achievements</div>
+                        <p>✅ Dive center revenue increase: <strong>+15%</strong><br>
+                        ✅ Students achieve conversational fluency in <strong>3-4 months</strong><br>
+                        ✅ Successful exam prep: IELTS (6.5-7.5), DELE B2, JLPT N5-N4<br>
+                        ✅ Experience in 5-star resorts and international schools</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                📧 <a href="mailto:rodriguezgaona@mail.ru">rodriguezgaona@mail.ru</a> &nbsp;|&nbsp;
+                📞 <a href="tel:+79280399668">+7 (928) 039-9668</a> &nbsp;|&nbsp;
+                📍 Krasnodar, Russia (remote work available)
+            </div>
+        </div>
+
+        <!-- ==================== RUSSIAN ==================== -->
+        <div class="lang-content" data-lang-content="ru">
+            <div class="section">
+                <div class="section-title"><span>📋</span> Профессиональный профиль</div>
+                <p>Мексиканский профессионал с <strong>более чем 10-летним международным опытом</strong> в Мексике, на Мальдивах и в России. Специалист по преподаванию языков, трансграничному бизнес-консалтингу и операционному менеджменту. В настоящее время получаю степень магистра в России.</p>
+                <div class="skills">
+                    <span class="skill-tag">🌎 3 языка + базовый японский</span>
+                    <span class="skill-tag">🎓 Сертификаты TESOL/TEFL & TEYL</span>
+                    <span class="skill-tag">📈 Увеличение доходов на 15%</span>
+                </div>
+            </div>
+
+            <div class="two-columns">
+                <div>
+                    <div class="section">
+                        <div class="section-title"><span>💼</span> Опыт работы</div>
+                        <div class="exp-item">
+                            <h3>Преподаватель английского и испанского</h3>
+                            <div class="date">Окт 2025 – настоящее время</div>
+                            <div class="company">Top Class Language Center, Краснодар</div>
+                            <p>Обучение взрослых уровни A2-B2. Персональные программы для собеседований, путешествий, бизнеса. Обратная связь 4.9-5.0.</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>Учитель английского (дети)</h3>
+                            <div class="date">Сен 2024 – Сен 2025</div>
+                            <div class="company">Солнечный детский сад, Краснодар</div>
+                            <p>Разработка программы английского для дошкольников. Интерактивные игры и песни.</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>Менеджер дайв-центра</h3>
+                            <div class="date">Июн 2024 – Авг 2025</div>
+                            <div class="company">Дайвинг-центр "Кашалот", Россия</div>
+                            <p>Координация команды, стратегии продаж, увеличение дохода на 15% через партнерство с отелями.</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>Инструктор PADI / Гид в отеле</h3>
+                            <div class="date">Апр 2022 – Ноя 2023</div>
+                            <div class="company">Paradise Island (Villa Nautica), Мальдивы</div>
+                            <p>Преподавание курсов PADI, экскурсии по рифам, лекции о китовых акулах и скатах манта.</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>Инструктор PADI / Продажи</h3>
+                            <div class="date">Окт 2012 – Мар 2015</div>
+                            <div class="company">Aquaworld, Канкун, Мексика</div>
+                            <p>Продажи в отелях 5 звезд, включая Ritz Carlton. Дайвинг в крупнейшей марине Латинской Америки.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="section">
+                        <div class="section-title"><span>🎓</span> Образование и сертификаты</div>
+                        <div class="exp-item">
+                            <h3>Магистратура</h3>
+                            <div class="company">Университет в России (в процессе)</div>
+                        </div>
+                        <div class="exp-item">
+                            <h3>TESOL/TEFL (120 часов)</h3>
+                            <div class="company">Аккредитован – 2021</div>
+                        </div>
+                        <div class="exp-item">
+                            <h3>TEYL (60 часов)</h3>
+                            <div class="company">Teaching English to Young Learners – 2024</div>
+                        </div>
+                        <div class="exp-item">
+                            <h3>Инструктор PADI Open Water</h3>
+                            <div class="company">Международный сертификат дайвинга</div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span>🗣️</span> Языки</div>
+                        <div class="exp-item"><h3>Испанский</h3><p>Родной (Мексика)</p></div>
+                        <div class="exp-item"><h3>Английский</h3><p>Свободно (C1-C2)</p></div>
+                        <div class="exp-item"><h3>Русский</h3><p>Продвинутый (B2-C1)</p></div>
+                        <div class="exp-item"><h3>Японский</h3><p>Базовый (N5-N4)</p></div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span>🏆</span> Ключевые достижения</div>
+                        <p>✅ Увеличение дохода дайв-центра: <strong>+15%</strong><br>
+                        ✅ Студенты достигают разговорной беглости за <strong>3-4 месяца</strong><br>
+                        ✅ Подготовка к экзаменам: IELTS (6.5-7.5), DELE B2, JLPT N5-N4<br>
+                        ✅ Опыт работы в 5-звездочных курортах и международных школах</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                📧 <a href="mailto:rodriguezgaona@mail.ru">rodriguezgaona@mail.ru</a> &nbsp;|&nbsp;
+                📞 <a href="tel:+79280399668">+7 (928) 039-9668</a> &nbsp;|&nbsp;
+                📍 Краснодар, Россия (удаленная работа возможна)
+            </div>
+        </div>
+
+        <!-- ==================== JAPANESE ==================== -->
+        <div class="lang-content" data-lang-content="ja">
+            <div class="section">
+                <div class="section-title"><span>📋</span> プロフィール</div>
+                <p>メキシコ出身のプロフェッショナル。メキシコ、モルディブ、ロシアでの<strong>10年以上の国際経験</strong>を持つ。語学教育、クロスボーダービジネスコンサルティング、オペレーションマネジメントを専門とする。現在ロシアで修士号を取得中。</p>
+                <div class="skills">
+                    <span class="skill-tag">🌎 3言語 + 日本語初級</span>
+                    <span class="skill-tag">🎓 TESOL/TEFL & TEYL認定</span>
+                    <span class="skill-tag">📈 売上15%増加の実績</span>
+                </div>
+            </div>
+
+            <div class="two-columns">
+                <div>
+                    <div class="section">
+                        <div class="section-title"><span>💼</span> 職歴</div>
+                        <div class="exp-item">
+                            <h3>英語・スペイン語講師</h3>
+                            <div class="date">2025年10月 – 現在</div>
+                            <div class="company">Top Class Language Center, クラスノダール</div>
+                            <p>成人向け英語・スペイン語指導（A2-B2）。面接、旅行、ビジネス向けの個別プログラム。評価4.9-5.0。</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>英語講師（幼児向け）</h3>
+                            <div class="date">2024年9月 – 2025年9月</div>
+                            <div class="company">Solnechny Kindergarten, クラスノダール</div>
+                            <p>就学前児童向け英語プログラムの開発。ゲームや歌を使ったインタラクティブな授業。</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>ダイブセンターマネージャー</h3>
+                            <div class="date">2024年6月 – 2025年8月</div>
+                            <div class="company">Kashalot Dive Center, ロシア</div>
+                            <p>チーム調整、販売戦略、ホテルとの提携により売上を15%増加。</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>PADIインストラクター / リゾートガイド</h3>
+                            <div class="date">2022年4月 – 2023年11月</div>
+                            <div class="company">Paradise Island (Villa Nautica), モルディブ</div>
+                            <p>PADIコース指導、リーフガイド、ジンベイザメやマンタのプレゼンテーション。</p>
+                        </div>
+                        <div class="exp-item">
+                            <h3>PADIインストラクター / 営業</h3>
+                            <div class="date">2012年10月 – 2015年3月</div>
+                            <div class="company">Aquaworld, カンクン, メキシコ</div>
+                            <p>リッツカールトンを含む5つ星ホテルでの営業。ラテンアメリカ最大のマリーナでダイビング指導。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="section">
+                        <div class="section-title"><span>🎓</span> 学歴・資格</div>
+                        <div class="exp-item">
+                            <h3>修士号</h3>
+                            <div class="company">ロシアの大学（在学中）</div>
+                        </div>
+                        <div class="exp-item">
+                            <h3>TESOL/TEFL (120時間)</h3>
+                            <div class="company">認定 – 2021年</div>
+                        </div>
+                        <div class="exp-item">
+                            <h3>TEYL (60時間)</h3>
+                            <div class="company">Teaching English to Young Learners – 2024年</div>
+                        </div>
+                        <div class="exp-item">
+                            <h3>PADIオープンウォーターインストラクター</h3>
+                            <div class="company">国際ダイビング資格</div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span>🗣️</span> 言語</div>
+                        <div class="exp-item"><h3>スペイン語</h3><p>ネイティブ（メキシコ）</p></div>
+                        <div class="exp-item"><h3>英語</h3><p>流暢（C1-C2）</p></div>
+                        <div class="exp-item"><h3>ロシア語</h3><p>上級（B2-C1）</p></div>
+                        <div class="exp-item"><h3>日本語</h3><p>初級（N5-N4）</p></div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span>🏆</span> 主な実績</div>
+                        <p>✅ ダイブセンター売上増加: <strong>+15%</strong><br>
+                        ✅ 生徒が<strong>3-4ヶ月</strong>で会話力を習得<br>
+                        ✅ 試験対策実績: IELTS (6.5-7.5), DELE B2, JLPT N5-N4<br>
+                        ✅ 5つ星リゾートやインターナショナルスクールでの勤務経験</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                📧 <a href="mailto:rodriguezgaona@mail.ru">rodriguezgaona@mail.ru</a> &nbsp;|&nbsp;
+                📞 <a href="tel:+79280399668">+7 (928) 039-9668</a> &nbsp;|&nbsp;
+                📍 クラスノダール, ロシア（リモートワーク可能）
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Francisco Javier Rodriguez Gaona – Multilingual CV | Updated: April 2026
+    </footer>
+</div>
+
+<script>
+    const langBtns = document.querySelectorAll('.lang-btn');
+    const langContents = document.querySelectorAll('[data-lang-content]');
+
+    langBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const lang = btn.getAttribute('data-lang');
+            langBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            langContents.forEach(content => {
+                if (content.getAttribute('data-lang-content') === lang) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
